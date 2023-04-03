@@ -1,0 +1,278 @@
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: rgba(235, 230, 242, 1);
+}
+*
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+}
+
+.main-block {
+    direction: rtl;
+    position: relative;
+    display: inline-block;
+    width: 93%;
+}
+
+.center-block {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.table {
+    background-color: rgba(235, 230, 242, 1);
+    width: 60%;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+.header {
+    /* background-color: rgba(116, 209, 202, 0.8); */
+    background-color: cornflowerblue;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+
+}
+
+#tasks {
+    padding: 20px;
+}
+
+.task {
+    display: flex;
+    background-color: rgba(220, 213, 240, 0.7);
+    border-bottom: solid black 1px;
+    border-radius: 2.5px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+
+}
+
+.done {
+    display: flex;
+    background-color: rgb(154, 243, 185);
+    border-bottom: solid black 1px;
+    border-radius: 2.5px;
+    height: 70px;
+    margin-bottom: 10px;
+
+}
+
+.done h2 {
+    text-decoration-line: line-through;
+    text-decoration-color: white;
+
+}
+
+.task:hover {
+    box-shadow: 0px 3px 15px rgba(42, 44, 56, 0.6);
+}
+
+.task-info {
+    width: 75%;
+
+}
+
+img {
+    width: 350px;
+    height: 250px;
+
+}
+
+.background {
+    position: absolute;
+    z-index: 0;
+    top: 300px;
+    margin-right: 1000px;
+}
+
+h1,
+h2 {
+    margin-top: 3px;
+    display: inline;
+
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+button {
+    float: right;
+    background-color: white;
+    border: none;
+    font-size: 10px;
+    box-shadow: 0px 3px 5px rgba(168, 168, 168, 0.4);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#add {
+    margin-right: 5px;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 1px;
+}
+
+.task_actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+}
+
+#done {
+    background-color: rgb(154, 243, 185);
+}
+
+#isdone {
+    background-color: rgb(175, 58, 58);
+
+}
+
+#delete {
+    background-color: rgb(175, 58, 58);
+}
+
+#edit {
+    background-color: rgb(116, 176, 220);
+
+}
+
+#mark {
+    background-color: #fff;
+}
+
+#ismark {
+    background-color: gold;
+}
+
+#deleteAll {
+    background-color: rgb(175, 58, 58);
+}
+
+nav {
+    display: inline;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(220, 213, 240, 0.7);
+    overflow: hidden;
+    height: 80px;
+    z-index: 1;
+
+}
+.container
+{
+    height: 80px;
+   direction: rtl;
+    margin: 0;
+    padding: 0;
+   
+}
+.logo
+{
+    width: 60%;
+    display: inline; 
+   position: fixed; 
+   float: right;
+   direction: rtl;
+   
+
+}
+.logo img
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+}
+.logo .im 
+{
+    display: flex;
+}
+.logo .tit 
+{
+    display: flex;
+    margin: 15px 3px;
+    padding: 5px ;
+    cursor: pointer;
+}
+.bn .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+.taps
+{
+ 
+    margin-top: 10px;
+    width: 40%;
+    display: flex;
+    float: left;
+    direction: ltr;
+    margin-right: 20px;
+    border-radius: 3px;
+    border-color: #fff;
+}
+ul{
+    
+    display: inline-block;
+    padding: 5px 20px;
+    list-style: none;
+    direction: ltr;
+}
+li
+{   
+    position: relative;
+    display: inline;
+    padding: 10px 20px ;
+    margin-left: 40px;
+    cursor: pointer; 
+
+}
+li:active
+{
+    background-color:cornflowerblue ;
+    color: #fff;
+}
+li:hover
+{
+    background-color:cornflowerblue ;
+    color: #fff;
+}
+.bn
+{
+    position: relative;
+    float: right;
+    border-radius: 10px; 
+    align-items: center;
+}
